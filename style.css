@@ -1,0 +1,134 @@
+:root {
+  --bege: #fffaf3;
+  --marrom: #4b2e1e;
+  --ocre: #d1a85a;
+  --zel: #e3caa5;
+  --creme: #fdf7ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bege);
+  color: var(--marrom);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--zel);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: var(--marrom);
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-weight: bold;
+}
+
+nav {
+  background-color: var(--ocre);
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.75rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ocre);
+}
+
+#produtos .produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.produto {
+  background-color: var(--creme);
+  border: 1px solid #e1d3c1;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+}
+
+.produto h3 {
+  margin: 0.5rem 0;
+}
+
+.produto ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.produto ul li {
+  margin-bottom: 0.25rem;
+}
+
+.botao-zap {
+  display: inline-block;
+  margin-top: 0.75rem;
+  background-color: #25d366;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contato p {
+  margin: 0.5rem 0;
+}
+
+footer {
+  background-color: var(--zel);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
