@@ -1,0 +1,94 @@
+/* Estilo da tela inicial */
+body.inicial {
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Quando o jogo começa, ativa o fundo da história */
+  body.modoHistoria {
+   background-image: url(dungeon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  /* Estilo da div de história pra não ficar ilegível no fundo */
+  #historia {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  
+  .barra {
+    height: 20px;
+    background-color: red;
+    width: 100%;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+  }
+  
+  .texto-vida {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+h1{
+    color: #facc15;
+}
+form{
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+.barra-container {
+    width: 100%;
+    max-width: 300px;
+    background-color: #444;
+    border: 1px solid #222;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  
+  .barra {
+    height: 20px;
+    background-color: green;
+    width: 100%;
+    transition: width 0.3s ease;
+  }
+  
+  .texto-vida {
+    font-size: 14px;
+    margin-top: 2px;
+    text-align: center;
+  }
+  #monstroContainer {
+   position: relative;
+   text-align: center;
+   margin-bottom: 20px;
+  }
+  #imagemMonstro{
+    width: 250px;
+    max-width: 90%;
+    height: auto;
+    animation: flutuar 2s infinite ease-in-out;
+  }
+  @keyframes flutuar{
+    0%,100%{ transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+  }

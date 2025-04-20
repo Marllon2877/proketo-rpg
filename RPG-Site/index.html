@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="inicial">
+    
+     <h1>Crie Seu personagem</h1>
+     <form id="personagemForm">
+         <label > Nome:
+             <input type="text"  id="nome" required>
+            </label><br> <br>
+            
+            <label>Classe:
+                <select id="classe">  
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Arqueiro">Arqueiro</option>
+                </select> <br><br>
+            </label>
+            <label > Atributo Principal:
+                <select  id="atributo">
+                    <option value="Força">Força</option>
+                    <option value="Inteliência">Inteligência</option>
+                    <option value="Destreza">Destreza</option>
+                </select>
+            </label><br><br>
+
+            <button type="submit">Iniciar Jornada</button>
+        </form>
+        <script src="script.js"></script>
+        <div id="historia" style="display: none;">
+            <h2> Capitulo 1: A Jornada Começa</h2>
+            <p id="textoNarracao">...</p>
+            <div id="barrasHP">
+                <div>
+                    <label>Monstro:</label>
+                    <div class="barra-container">
+                      <div id="vidaInimigo" class="barra"></div>
+                    </div>
+                    <div id="vidaInimigoTexto" class="texto-vida">100</div>
+                  </div>
+                  
+                  <div>
+                    <label>Jogador:</label>
+                    <div class="barra-container">
+                      <div id="vidaPersonagem" class="barra"></div>
+                    </div>
+                    <div id="vidaPersonagemTexto" class="texto-vida">100</div>
+                  </div>
+              <div id="areaDado" style="margin-bottom: 20px;">
+                <button onclick="rolarDado()">Rolar Dado</button>
+                <div id="resultadoDado" style="margin-top: 10px; font-weight: bold; font-size: 18px;"></div>
+              </div>
+            <div id="opcoes"></div>
+        </div>
+        <div id="monstroContainer">
+            <img id="imagemMonstro" src="GG.png" alt="Monstro" />
+        </div>
+</body>
+</html>
